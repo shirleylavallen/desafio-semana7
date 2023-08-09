@@ -15,11 +15,9 @@ function showData(dataArray) {
   }
 }
 
-// Utilizar fetch para obtener los datos del archivo JSON
 fetch(DATA_URL)
   .then(response => response.json())
   .then(dataArray => {
-    // Llamar a la función showData para mostrar los datos en el DOM
     showData(dataArray);
   })
   .catch(error => {
